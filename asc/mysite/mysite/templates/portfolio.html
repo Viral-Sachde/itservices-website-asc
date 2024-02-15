@@ -1,0 +1,218 @@
+{% extends 'base_op.html' %}
+{% load cms_tags menu_tags sekizai_tags %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} Portfolio | ASC {% endblock title %}</title>
+  <style>
+  </style>
+
+</head>
+
+<body>
+{% block body %}
+  <!-- ======= Portfolio Section ======= -->
+<!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <p>Check our Portfolio</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+               <li data-filter=".filter-web">Dynamic Sites</li>
+              <li data-filter=".filter-app">App</li>
+                <li data-filter=".filter-card">SEO & Social Media Marketing</li>
+
+
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/espi.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                 <a href="https://espiconsultants.com/" target="_blank" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+             <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/quin.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                 <a href="https://quindara.in/" target="_blank" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+             <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/imag.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                 <a href="https://imagicbaroda.com/" target="_blank" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/alps.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                 <a href="https://alpstravelsandtours.com/new/" target="_blank" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/aadhya.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                 <a href="https://aadhyagreensolutions.com/" target="_blank" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/edus.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                 <a href="http://edustation.online/" target="_blank" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/oced.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                 <a href="https://oecdubai.com/" target="_blank" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/ocei.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                 <a href="https://oecindia.com/" target="_blank" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+<!--seo and social media-->
+
+         <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <iframe width="426" height="260" src="https://www.youtube.com/embed/JGiBaKiyPl8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                 <a href="https://youtu.be/JGiBaKiyPl8" target="_blank" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <iframe width="426" height="260" src="https://www.youtube.com/embed/bk0n5LcBi50" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+             <div class="portfolio-info">
+                <div class="portfolio-links">
+                 <a href="https://youtu.be/bk0n5LcBi50" target="_blank" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+            <iframe width="426" height="260" src="https://www.youtube.com/embed/ahkx0Suq8os" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+ <div class="portfolio-info">
+                <div class="portfolio-links">
+                 <a href="https://youtu.be/ahkx0Suq8os" target="_blank" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+<!--appss-->
+
+
+           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/tokart.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                 <a href="https://play.google.com/store/apps/details?id=dev.arkone.nft.tokart" target="_blank" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/syoga.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                 <a href="https://play.google.com/store/apps/details?id=com.asc.saralyoga target="_blank" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/tokchain.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                 <a href="https://play.google.com/store/apps/details?id=dev.arkone.tokchain_wallet.asc_tokchain_wallet" target="_blank" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+{% endblock body %}
+</body>
+</html>

@@ -1,0 +1,138 @@
+{% extends 'base.html' %}
+{% load cms_tags menu_tags sekizai_tags %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} Services | ASC {% endblock title %}</title>
+
+    <style>
+    {% block style %}
+    #header {
+  transition: all 0.5s;
+  z-index: 997;
+  padding: 15px 0;
+  background :rgba(0, 0, 0, 0.8) !important;
+}
+
+#header.header-scrolled,
+#header.header-inner-pages {
+color: #151515 !important;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+#header .logo {
+  font-size: 32px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+#header .logo a {
+  color: #fff;
+}
+
+#header .logo a span {
+  color: #ffc451;
+}
+
+#header .logo img {
+
+
+}
+
+.services .icon-box {
+  padding: 30px;
+  border-radius: 6px;
+  background: #fff;
+  transition: ease-in-out 0.3s;
+}
+
+.services .icon-box i {
+  float: left;
+  color: #ffc451;
+  font-size: 40px;
+  line-height: 0;
+}
+
+.services .icon-box h4 {
+  margin-left: 70px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.services .icon-box h4 a {
+  color: #384046;
+  transition: 0.3s;
+}
+
+.services .icon-box p {
+  margin-left: 70px;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+.services .icon-box:hover {
+  box-shadow: 0px 2px 22px rgba(0, 0, 0, 0.08);
+}
+
+.services .icon-box:hover h4 a {
+  color: ##ffc451;
+}
+{% endblock style %}
+</style>
+</head>
+<body>
+{% block l1 %}{% url "home" %}{% endblock l1 %}
+
+{% block body %}<!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg" style="margin:55px 76px 0px 76px;  ">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>Services We Provide</p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="icon-box">
+              <i class="bi bi-briefcase"></i>
+              <h4><a href="#">Custom CRM Development</a></h4>
+              <p>Anant Soft Computing offers custom CRM development services that are tailored to your needs, with features such as lead and opportunity management, customer data management, task automation, and reporting. Contact us for more information.</p>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-lg-0">
+            <div class="icon-box">
+              <i class="bi bi-card-checklist"></i>
+              <h4><a href="#">ERM Development</a></h4>
+              <p>Anant Soft Computing provides ERP development services that optimize business operations through customized solutions, with a focus on improving efficiency and productivity. Contact us to learn more.</p>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4">
+            <div class="icon-box">
+              <i class="bi bi-bar-chart"></i>
+              <h4><a href="#">SEO</a></h4>
+              <p>Anant Soft Computing provides customized SEO services to improve website visibility and ranking, with a strategy that includes on-page and off-page optimization and content marketing. Contact us to learn more.</p>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4">
+            <div class="icon-box">
+              <i class="bi bi-binoculars"></i>
+              <h4><a href="#">Mobile Application Development</a></h4>
+              <p>Anant Soft Computing provides customized mobile application development services for iOS and Android, tailored to meet specific business needs. Contact us to learn more about how their services can benefit your business.</p>
+            </div>
+          </div>
+
+      </div>
+    </section><!-- End Services Section -->
+{% endblock body %}
+
+</body>
+</html>

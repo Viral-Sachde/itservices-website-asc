@@ -1,0 +1,29 @@
+{% extends 'base_op.html' %}
+
+
+{% block title %} Blog | ASC{% endblock %}
+
+ {% block body %}
+<div style="margin:55px 76px 0px 76px; padding-top:50px" xmlns="http://www.w3.org/1999/html">
+     <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Blog</h2>
+          <p>Our Recent Posts</p>
+        </div>
+
+  <div class="articles">
+    {% for article in articles %}
+      <div class="article">
+          <img src="{{article.thumb.url}}" height="300" width="500"/></br></br>
+        <h2><a href="{% url 'blog:detail' slug=article.slug %}">{{ article.title }}</a></h2>
+        <p>{{ article.snippet | safe }}</p><p><a href="{% url 'blog:detail' slug=article.slug %}">Read More</a></p>
+        <p class="author">Added by {{ article.author.username }}</p>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+     </section> </div>
+ {% endblock body %}

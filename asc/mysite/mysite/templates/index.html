@@ -1,0 +1,432 @@
+{% extends 'base.html' %}
+{% load cms_tags menu_tags sekizai_tags %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title> {% block title %} Home | ASC {% endblock title %}C </title>
+  <style>
+
+  .card {
+  border-radius: .7rem;
+}
+  </style>
+  <!-- =======================================================
+  * Template Name: Gp - v4.10.0
+  * Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+{%  block body %}
+  <!-- ======= Hero Section ======= -->
+
+
+
+
+ <!-- ======= Hero Section ======= -->
+ <section id="hero"  style="background:#37517e;" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row" >
+        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+          <h1>Empowering Your Business with Cutting-Edge Technology</h1>
+          <h2>Custom software solutions that drive growth and efficiency</h2>
+          <div class="d-flex justify-content-center mt-5">
+            <a href="#about" class="get-started-btn scrollto">Get a Free Consultation</a>
+              </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+          <img src="{% static 'assets/img/hero-img.png' %}" class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+
+
+       {% block content %}
+        {% placeholder "content" %}
+    {% endblock content %}
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-2 content" data-aos="fade-left" data-aos-delay="100">
+            <img src="{% static 'assets/img/about.jpg' %}" class="img-fluid" alt="">
+
+             <br><br><br>
+             <h3>Mission </h3>
+            <p class="fst-italic">
+          "Our mission is to deliver innovative and adaptive technology solutions that empower our clients to achieve their goals and stay ahead of the curve. We are committed to integrating Artificial Intelligence and Machine Learning in our solutions to make them smarter and more efficient. We strive to create a culture of learning and experimentation, providing opportunities for students and the next generation to explore their potential and grow. We are dedicated to empowering women in India by providing equal opportunities and fostering an inclusive workplace where diversity is valued. We are dedicated to delivering exceptional customer service and building long-term partnerships with our clients."
+This mission statement communicates the company's focus on delivering innovative and adaptive technology solutions, it highlights the company's dedication to integrating Artificial Intelligence and Machine Learning in its solutions to make them smarter and more efficient. The statement also emphasizes the company's commitment to fostering a culture of learning and experimentation, providing opportunities for students and the next generation to explore their potential and grow, as well as its dedication to empowering women in India. </p>
+
+          </div>
+
+
+
+          <div class="col-lg-6 pt-4 pt-lg-0 order-1 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
+            <h3>About Us </h3>
+            <p class="fst-italic">
+             Anant Soft Computing is dedicated in developing smart Apps utilizing the latest technologies and techniques from the field of Artificial Intelligence. We are focused on creating applications which are smart and reduce human effort. We are also dedicated in designing and developing commercial applications primarily on Android and IOS platforms.
+</p>
+           <br>
+             <p class="fst-italic">"Founded in 2008 by Jigar Desai, Anant Soft Computing (ASC) is a company dedicated to developing custom solutions for its clients, utilizing cutting-edge technologies such as Artificial Intelligence, Blockchain, and Virtual Reality to help solve their day-to-day problems. We pride ourselves in providing our clients with solutions that are not only efficient, but also help them save time and effort. Our team of professionals are at the forefront in the world of technology, and are not afraid to take on any challenge when they are faced with a situation, utilizing their knowledge and experience in Artificial Intelligence, Blockchain, and Virtual Reality to deliver innovative and effective solutions."
+            </p>
+
+            <br> <br> <br> <br> <br>
+            <h3>Vision </h3>
+ <p class="fst-italic">
+            Our vision is to be a leading provider of cutting-edge technology solutions, empowering our clients to achieve their goals through innovation and collaboration. We strive to foster a culture of learning and experimentation, providing opportunities for students and the next generation to explore their potential and grow. We are dedicated to integrating Artificial Intelligence and Machine Learning in our solutions, making them adaptive and smarter, in order to help our clients stay ahead of the curve. We also commit to empower women in India by providing equal opportunities and creating an inclusive workplace where diversity is valued."
+This vision statement includes the company's focus on integrating artificial intelligence and machine learning in its solutions, which will make them adaptive and smarter. It communicates that the company is dedicated to help clients stay ahead of the curve by providing state of the art technology solutions. The statement also highlights the company's commitment to fostering a culture of learning and experimentation, providing opportunities for students and the next generation to explore their potential and grow, as well as its dedication to empowering women in India.
+
+ </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+    <section style="color: #000;">
+  <div class="container py-5">
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-10 col-xl-8 text-center">
+        <h3 class="fw-bold mb-4">What People Say About Us!</h3>
+        <p class="mb-4 pb-2 mb-md-5 pb-md-0">
+
+        </p>
+      </div>
+    </div>
+
+    <div class="row text-center">
+      <div class="col-md-4 mb-4 mb-md-0">
+        <div class="card">
+          <div class="card-body py-4 mt-2">
+            <div class="d-flex justify-content-center mb-4">
+              <img src="{% static 'assets/img/u.png'%}"
+                class="rounded-circle shadow-1-strong" width="100" height="100" />
+            </div>
+            <h5 class="font-weight-bold">Kamil Merchant</h5>
+            <h6 class="font-weight-bold my-3">
+ Great customer support. Practical solutions. They have the know-how to cater to the needs of businesses of all scales. Best luck for greater heights!                       </h6>
+            <ul class="list-unstyled d-flex justify-content-center">
+              <li>
+                <i class="fas fa-star fa-sm text-info"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-info"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-info"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-info"></i>
+              </li>
+              <li>
+                <i class="fas fa-star-half-alt fa-sm text-info"></i>
+              </li>
+            </ul>
+            <p class="mb-2">
+              <i class="fas fa-quote-left pe-2"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4 mb-md-0">
+        <div class="card">
+          <div class="card-body py-4 mt-2">
+            <div class="d-flex justify-content-center mb-4">
+              <img src="{% static 'assets/img/f.png'%}"
+                class="rounded-circle shadow-1-strong" width="100" height="100" />
+            </div>
+            <h5 class="font-weight-bold">Gifty Varghese</h5>
+            <h6 class="font-weight-bold my-3">
+The best software company in Vadodara and Office Environment is quite friendly, welcoming & Professional at the same time. Will definately recommend this</h6>
+            <ul class="list-unstyled d-flex justify-content-center">
+              <li>
+                <i class="fas fa-star fa-sm text-info"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-info"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-info"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-info"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-info"></i>
+              </li>
+            </ul>
+            <p class="mb-2">
+              <i class="fas fa-quote-left pe-2"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4 mb-md-0">
+        <div class="card">
+          <div class="card-body py-4 mt-2">
+            <div class="d-flex justify-content-center mb-4">
+              <img src="{% static 'assets/img/u.png'%}"
+                class="rounded-circle shadow-1-strong" width="100" height="100" />
+            </div>
+            <h5 class="font-weight-bold">Pujan Shah</h5>
+            <h6 class="font-weight-bold my-3">I have engaged Anant soft Computing for revamping our existing website and to design a unique dashboard for our clients use and their team have done a great work.</h6>
+            <ul class="list-unstyled d-flex justify-content-center">
+              <li>
+                <i class="fas fa-star fa-sm text-info"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-info"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-info"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-info"></i>
+              </li>
+              <li>
+                <i class="far fa-star fa-sm text-info"></i>
+              </li>
+            </ul>
+            <p class="mb-2">
+              <i class="fas fa-quote-left pe-2"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+       <!-- ======= Features Section ======= -->
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>Check our Services</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <h4><a href="">Custom CRM Development</a></h4>
+              <p>Anant Soft Computing offers custom CRM development services that are tailored to your needs, with features such as lead and opportunity management, customer data management, task automation, and reporting. Contact us for more information.
+
+
+
+</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4><a href="">ERP Development</a></h4>
+              <p>Anant Soft Computing provides ERP development services that optimize business operations through customized solutions, with a focus on improving efficiency and productivity. Contact us to learn more.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4><a href="">SEO</a></h4>
+              <p>Anant Soft Computing provides customized SEO services to improve website visibility and ranking, with a strategy that includes on-page and off-page optimization and content marketing. Contact us to learn more.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4><a href="">Mobile Application Development</a></h4>
+              <p>Anant Soft Computing provides customized mobile application development services for iOS and Android, tailored to meet specific business needs. Contact us to learn more about how their services can benefit your business.</p>
+            </div>
+          </div>
+</div>
+
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="text-center">
+
+          <p> We offer a range of services, including CRM and ERP development, SEO, and mobile application development. Their services are tailored to meet specific business needs and improve efficiency, productivity, and online visibility. Contact us to learn more about which service is best for your business.
+
+
+
+</p>
+          <a class="cta-btn" href="#">Compare Our Services</a>
+        </div>
+
+      </div>
+    </section><!-- End Cta Section -->
+
+
+
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row no-gutters">
+          <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start" data-aos="fade-right" data-aos-delay="100"></div>
+          <div class="col-xl-7 ps-0 ps-lg-5 pe-lg-1 d-flex align-items-stretch" data-aos="fade-left" data-aos-delay="100">
+            <div class="content d-flex flex-column justify-content-center">
+              <h3>Our Achievements</h3>
+              <p>
+               SUCCESS IS NOT THE KEY TO HAPPINESS. HAPPINESS IS THE KEY TO SUCCESS. IF YOU LOVE WHAT YOU ARE DOING YOU WILL BE SUCCESSFUL
+              </p>
+              <div class="row">
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-emoji-smile"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="65" data-purecounter-duration="2" class="purecounter"></span>
+                    <p><strong>Team</strong> Built a team of highly skilled and experienced software developers, data scientists, and project managers, enabling us to consistently deliver quality work and exceed client expectations.</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-journal-richtext"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="2" class="purecounter"></span>
+                    <p><strong>Projects</strong> Developed and implemented cutting-edge artificial intelligence and machine learning solutions for businesses across various industries, resulting in significant cost savings and improved operational efficiency.</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-clock"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="4" class="purecounter"></span>
+                    <p><strong>Years of experience</strong> Expanded our global footprint by opening new offices in strategic locations and partnering with overseas clients to deliver software solutions that cater to their specific needs.</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-award"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="20" data-purecounter-duration="4" class="purecounter"></span>
+                    <p><strong>Awards</strong> Received multiple awards and accolades from clients and industry experts for our innovative solutions and customer-centric approach, including being named as one of the Top 10 AI Solution Providers in the country.</p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End .content-->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+               <h3>Steve Jobs</h3>
+                <h4>Ceo &amp; Founder</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                 "Innovation distinguishes between a leader and a follower.."
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+               <h3>Carl Pei</h3>
+                <h4>CEO - NOTHING</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Simple is not easy
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                 <h3>Ratan Tata</h3>
+                <h4>CEO</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                 ALL OF US DO NOT HAVE EQUAL TALENT. YET, ALL OF US HAVE AN EQUAL OPPORTUNITY TO DEVELOP OUR TALENTS. ~ Ratan Tata
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <h3>Elon Musk</h3>
+                <h4>CEO</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+            Rockets are cool. There's no getting around that."
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+
+                <h3>Pranav Mistry</h3>
+                <h4>Sixth Sense Master</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                 Our time is a time crossing for boundaries.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+  </main><!-- End #main -->
+
+  {% endblock body %}
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+  {% render_block "js" %}
+</body>
+
+</html>

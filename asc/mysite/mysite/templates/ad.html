@@ -1,0 +1,33 @@
+{% extends 'base_op.html' %}
+{% load cms_tags menu_tags sekizai_tags %}
+{% load static %}
+
+
+
+{% block title %} {{ articles.title }} | ASC{% endblock %}
+ {% block desc %} {{ articles.meta_des }} {% endblock %}
+    {% block keyw %} {{ articles.meta_keywords }} {% endblock %}
+{% block body %}
+
+<div style="margin:55px 76px 0px 76px; padding-top:50px" xmlns="http://www.w3.org/1999/html">
+     <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Blog</h2>
+          <p>{{ articles.title }}</p>
+        </div>
+
+
+  <div class="article-detail">
+    <div class="article">
+      <img src="{{ article.thumb.url }}" alt="">
+      <h2>{{ articles.title }}</h2>
+      {{ articles.body | safe}}
+      <p>{{ articles.date }}</p>
+    </div>
+  </div>
+
+     </section>
+</div>
+{% endblock body  %}
